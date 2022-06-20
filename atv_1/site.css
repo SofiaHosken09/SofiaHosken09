@@ -1,0 +1,83 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(https://prium.github.io/slick/assets/images/header_showcase.jpg);
+}
+
+h1 {
+
+    font-family: "Source Sans Pro",sans-serif;
+    color: white;
+    font-size: 95px;
+    margin-top: 5%;
+    font-weight: 100;
+}
+
+#negrito {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 span{
+    color: white;
+    font-size: 95px;
+    text-align: center;
+    margin-top: 10%;
+}
+.texto{
+    text-align: center;
+}
+
+#texto{
+    display: inline-block;
+    color: white;
+    width: 50%;
+    opacity: 60%;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{box-shadow: 5px 5px 25px black;}
+
+li {
+    display: inline-block;
+}
+button{
+    border-color:white;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    opacity: 70%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 50px;
+    transition: 0.5s;
+    margin:7px;
+}
+button{
+    margin-top: 20px;
+}
+.botao{
+    margin-top: 40px;
+}
+#svg {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+img{
+    
+  margin: 0 0 1em 1em;
+  
+}
+
+.img{
+    margin-top: 98px;
+    box-shadow: black 100vh;
+}
+button:hover{
+    background-color:#FFF;
+    color:black;
+}
