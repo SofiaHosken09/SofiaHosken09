@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #C7D3FF;
+    height: 70px;
+}
+
+.titulo {
+    position: absolute;
+    left: 45%;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 42%;
+    top: 20px;
+}
+
+.hamburguer {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.carrinho {
+    position: absolute;
+    left: 90%;
+    top: 20px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.saida {
+    position: absolute;
+    left: 93%;
+    top: 22px;
+}
+#contatos{
+    width: 200px;
+    font-family:sans-serif;
+    color:#380B61;
+    margin-left:7%;
+
+}
+#subtitulo{
+    font-family:sans-serif;
+    color:#380B61;
+    margin-left:10%;
+}
+fieldset{
+    border:0;
+}
+.body{
+    display: flex;
+    width: 400px;
+    background-color: #B1CEEA;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #56429d;
+    margin-left: 36%;
+    margin-top: 7%;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+.campo{
+    margin-bottom: 1em;
+
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color:#59429d;
+    display: block;
+}
+fieldset.grupo .campo{
+    float: left;
+    margin-left: 1em;
+}
+.campo input [type="email"], .campo input[type="email"], .camposelect, .campo textarea{
+    padding: o.2em;
+    border: 1px solid #59429d;
+
+}
+
+.grupo
+{
+    margin-bottom: 10px;
+}
+.roda {
+    position: fixed;
+    bottom: 0;
+    background-color: #C7D3FF;
+    height: 70px;
+    width: 100%;
+    
+    padding:1%;
+    }
+    html{
+        height: 98%;
+    }
+    
+    body{
+        height: 98%;
+    }
+    .sugestao{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .button{
+        margin-top: 10px;
+    }
+
+
+
+
+

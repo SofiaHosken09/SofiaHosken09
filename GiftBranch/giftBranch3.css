@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #C7D3FF;
+    height: 70px;
+}
+
+.titulo {
+    position: absolute;
+    left: 45%;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 42%;
+    top: 20px;
+}
+
+.hamburguer {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.carrinho {
+    position: absolute;
+    left: 90%;
+    top: 20px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.saida {
+    position: absolute;
+    left: 93%;
+    top: 22px;
+}
+.retangulo {
+    display: flex;
+    justify-content: center;
+    margin-top:10%;
+}
+.roda {
+    position: absolute;
+   bottom: 0;
+    background-color: #C7D3FF;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 0;
+    padding:1%;
+}
+}
