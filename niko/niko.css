@@ -1,0 +1,120 @@
+
+*{
+  margin:0 auto;
+}
+.navbar{
+    background: transparent;
+    padding-top: 0.7em;
+    font-size: 24px;
+    font-family: "Poppins",Arial,sans-serif;
+    font-weight: bold ;
+    display:block;
+    padding-bottom: 0.7rem;
+    display: flex;
+   text-align: left;
+   position: relative;
+   top:35px;
+   right: 36.2%;
+}
+#home{
+  border-bottom:3px solid #0075f6;
+  color: #0075f6;
+  display: none;
+}
+li{
+    position: relative;
+    display: inline-block;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin:  0 0 3em 3em;;
+  padding: 0px 0px 2px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:black;
+  font: 16px;
+  left: 46.9%;
+  font:bold;
+  opacity: 85%;
+
+  
+}
+
+
+.home {
+color:#0075f6;
+text-decoration: underline 4px;
+}
+
+li:hover {
+  border-bottom: 3px solid #0075f6;
+ 
+}
+.quadrado{
+  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 62%;
+    background: #77b7ff;
+    z-index: -2;
+}
+img{
+  position:relative;
+  left: 25%;
+  
+}
+
+#web{
+  position:absolute;
+  left: 13.4%;
+  top:49%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:33px;
+  opacity: 85%;
+}
+h1{
+  font-family: "Poppins",Arial,sans-serif;
+  font-size: 60px;
+  color: black;
+  position:absolute;
+  top:30%;
+  max-width: 50%;
+  left: 13.4%;
+ 
+}
+span{
+  color:#0075f6;
+  top:40%;
+  max-width: 50%;
+  left: 13.4%;
+}
+h2{
+  font-family: "Poppins",Arial,sans-serif;
+  color: #0094f6;
+  font-size:14px;
+  position:absolute;
+  top:28%;
+  max-width: 50%;
+  left:  13.4%;
+}
+.btn-custom{
+  border:1px solid #0075f6;
+  padding: 5px 20px;
+  font-size:15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0075f6;
+  top:58%;
+  position: absolute;
+  font-family: sans-serif;
+  left: 13.4%;
+}
+p{
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 13.4%;
+  top:50% ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
