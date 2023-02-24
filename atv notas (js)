@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">
+        Digite o nome do aluno:
+      </label>
+
+      <Input type="label" id="name">
+      <Br><Br>
+
+      <label for="nota1">
+        Digite sua nota:
+      </label>
+
+      <Input type="number" id="nota1">
+      <Br><Br>
+        <label for="nota2">
+            Digite sua nota:
+          </label>
+    
+          <Input type="number" id="nota2">
+          <Br><Br>
+
+            <label for="nota3">
+                Digite sua nota:
+              </label>
+        
+              <Input type="number" id="nota3">
+              <Br><Br>
+
+      <Button onclick="result()"> 
+        Calcular
+      </Button> 
+
+      <script>
+
+        function result(){
+        const nota1 = parseFloat(document.getElementById("nota1").value);
+        const nota2 = parseFloat(document.getElementById("nota2").value);
+        const nota3 = parseFloat(document.getElementById("nota3").value);
+        const name = document.getElementById("name").value;
+        
+        
+        var nota_total = nota1 + nota2 + nota3;
+
+        var media = nota_total / 3;
+
+
+        if( media >= 7){
+
+        alert( "O aluno(a)" + name + " foi aprovado com média " + media);
+        }
+         else{
+        alert( "O aluno(a)" + name + " foi reprovado com a média de " + media);
+        }
+
+
+
+        
+
+        }
+        
+
+      </script>
+</body>
+</html>
