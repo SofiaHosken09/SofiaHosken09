@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Nome:</label>
+    <input type="text" id="Name"><br><br>
+    <label for="salary">Salário:</label>
+    <input type="number" id="salary"><br><br>
+    <button onclick="showSalary()">Mostrar Salário</button>
+
+
+
+    
+
+    <script> 
+    
+    function showSalary(){
+       const name = document.getElementById("Name").value;
+       const salary = document.getElementById("salary").value;
+       
+        var new_salary = parseFloat(salary)+ parseFloat(salary)*0.10;
+
+        if( name && new_salary ){
+            alert(name + ", seu salário é de $" + new_salary)
+        }
+    }
+</script>
+</body>
+</html>
