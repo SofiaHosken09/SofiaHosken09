@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="preco">Preço do produto:</label>
+    <input type="number" id="preco"><br><br>
+    <label for="parcela">Digite quantas vazes você quer parcelar (3 ou 5):</label>
+    <input type="number" id="parcela"><br><br>
+
+    <button onclick="parcelas()">Calcular</button>
+
+
+
+    <script>
+    
+    function parcelas(){
+        const preco = parseFloat (document.getElementById("preco").value);
+        const parcela =  parseInt (document.getElementById("parcela").value);
+           
+
+        if(parseInt(parcela) == 3){
+            total = (preco*0.10)+preco;
+            parc = total/3;
+        }
+
+        else{
+            if(parcela== 5){
+                total = ((preco*0.20)+preco);
+                parc = total/5;
+            }
+
+        else{
+            alert("Digite  um parcelamento válido")
+        }
+        }
+
+        alert("O valor total a pagar é"+ total + "em parcelas de"+ parc);
+
+    }
+    
+   
+    </script>
+</body>
+</html>
