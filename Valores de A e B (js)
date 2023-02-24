@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="valor_A">
+        Digite o número A:
+      </label>
+
+      <Input type="number" id="A">
+      <Br><Br>
+
+      <label for="valor_B">
+        Digite o número B:
+      </label>
+
+      <Input type="number" id="B">
+      <Br><Br>
+
+      <Button onclick="result()"> 
+        Calcular valor C 
+      </Button>
+
+      <script>
+      function result() {
+        const A = document.getElementById("A").value;
+        const B = document.getElementById("B").value;
+        var c;
+      
+        if (A == B) {
+          c = parseInt(A) + parseInt(B);
+        } else {
+          c = parseInt(A) * parseInt(B);
+        }
+      
+        alert("O resultado é: " + c);
+      }
+      </script>
+      
+</body>
+</html>
