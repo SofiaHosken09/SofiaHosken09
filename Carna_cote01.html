@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de consumo</title>
+</head>
+<body>
+    <label for="quant">
+        Digite a quantidade de packs consumidos durante o periodo:
+      </label>
+      <input type="number" id="quant">
+      <br><br>
+      <button onclick="calcular_consumo()">Gerar resultado</button>
+      <p id="resultado"></p>
+    <script>
+
+    function calcular_consumo(packs) {
+        var latas = 0;
+        var litros = 0.0;
+        var gasto = 0.0;
+
+        // quant latas consumidas
+        latas = packs * 12;
+
+        // quant litros consumidos
+        litros = latas * 350 / 1000;
+
+        // gasto cerveja
+        gasto = packs * 38.0;
+
+        // return result
+        return "Litros: " + litros + " Gasto: " + gasto;
+    }
+
+    var resultadoElement = document.getElementById("resultado");
+    var buttonElement = document.querySelector("button");
+    buttonElement.addEventListener("click", function() {
+        resultadoElement.textContent = calcular_consumo(parseInt(document.getElementById("quant").value));
+    });
+    
+
+    </script>
+</body>
+</html>

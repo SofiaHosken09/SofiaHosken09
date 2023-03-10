@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="usuario">
+        Digite o usuario "Gabriel" ou Lara:
+      </label>
+      <input type="text" id="usuario">
+      <br><br>
+      <button onclick="exibirHabilidades()">Gerar resultado</button>
+      <p id="resultado"></p>
+      
+      <script>
+        var usuarios = [{
+            nome: "Gabriel",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+          },
+          {
+            nome: "Lara",
+            habilidades: ["JAVA", "PHP", "Laravel"]
+          }
+        ];
+      
+        function exibirHabilidades() {
+          var usuario = document.getElementById("usuario").value;
+          var resultado = document.getElementById("resultado");
+          var usuarioEncontrado = false;
+          
+          for (let u of usuarios) {
+            if (u.nome === usuario) {
+              resultado.textContent = `O ${u.nome} possui as habilidades: ${u.habilidades.join(", ")}`;
+              usuarioEncontrado = true;
+              break;
+            }
+          }
+      
+          if (!usuarioEncontrado) {
+            resultado.textContent = "Usuário não encontrado.";
+          }
+        }
+      </script>
+      
+</body>
+</html>

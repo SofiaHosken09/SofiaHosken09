@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos das notas</title>
+</head>
+<body>
+    <label for="quant" min="5.0" max="10.0">
+        Digite a nota para o quesito criatividade :
+      </label>
+      <input type="number" id="criatividade">
+      <br><br>
+      
+      <label for="quant" min="5.0" max="10.0">
+        Digite a nota para o quesito originalidade :
+      </label>
+      <input type="number" id="originalidade">
+      <br><br>
+
+      <label for="quant" min="5.0" max="10.0">
+        Digite a nota para o quesito elegancia :
+      </label>
+      <input type="number" id="elegancia">
+      <br><br>
+
+      <label for="quant" min="5.0" max="10.0">
+        Digite a nota para o quesito acabamento :
+      </label>
+      <input type="number" id="acabamento">
+      <br><br>
+
+      <label for="quant" min="5.0" max="10.0">
+        Digite a nota para o quesito concervação :
+      </label>
+      <input type="number" id="conservacao">
+      <br><br>
+
+      <button onclick="calcular_notas()">Gerar resultado</button>
+      <p id="resultado"></p>
+    <script>
+        function calcular_notas(){
+            let criatividade = parseFloat(document.getElementById("criatividade").value);
+            let originalidade = parseFloat(document.getElementById("originalidade").value);
+            let elegancia = parseFloat(document.getElementById("elegancia").value);
+            let acabamento = parseFloat(document.getElementById("acabamento").value);
+            let conservacao = parseFloat(document.getElementById("conservacao").value);
+            let notas = [criatividade, originalidade, elegancia, acabamento, conservacao];
+  
+            notas.sort(); // ordena as notas em ordem crescente
+            
+            let somaNotasCentrais = notas[1] + notas[2] + notas[3]; // soma as três notas centrais
+            
+            let notaFinal = somaNotasCentrais / 3; // divide a soma das notas centrais por 3
+            
+            document.getElementById("resultado").innerHTML = "Nota final: " + notaFinal.toFixed(2); // exibe a nota final com duas casas decimais
+}
+
+
+
+            
+
+
+        
+    </script>
+</body>
+</html>

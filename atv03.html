@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <label for="name">Digite suas habilidades:</label>
+    <input type="text" id="habilidades"><br><br>
+   
+    <button onclick="showhabilidades()">Mostrar Habilidades</button>
+    <p  id="resultado"></p>
+    <script>
+
+function showhabilidades(){
+     const habilidades =  document.getElementById("habilidades").value;
+
+     var hab = ["JavaScript", "ReactJS","React NAtive", "Angular"];
+
+               var indice = habilidades.indexOf("javaScript",0)
+               if(indice >= 0 ){
+                document.getElementById("resultado").innerHTML = "True";   
+               }
+               else{
+                document.getElementById("resultado").innerHTML = "False";   
+               }
+}
+    
+    
+    </script>
+</body>
+</html>

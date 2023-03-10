@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+
+        
+            const pessoas = [
+            { nome: "João", idade: 25, RG: "123456" },
+            { nome: "Lucia", idade: 17, RG: "234567" },
+            { nome: "Pedro", idade: 30, RG: "345678" },
+            { nome: "Mariles", idade: 16, RG: "456789" },
+            { nome: "Lucas Paulo", idade: 20, RG: "567890" },
+            { nome: "Julia Fonceca", idade: 18, RG: "678901" },
+            { nome: "Fernanda Andressa", idade: 22, RG: "789012" },
+            { nome: "Gabriel Pereira", idade: 19, RG: "890123" },
+            { nome: "Mariana Julia", idade: 29, RG: "901234" },
+            { nome: "Gael", idade: 26, RG: "012345" },
+            ];
+    
+
+        function idade(){
+            const maioresDeIdade = pessoas.filter(pessoa => pessoa.idade > 18).map(pessoa => pessoa.idade);
+console.log(maioresDeIdade); 
+
+        }
+
+
+
+    </script>
+</body>
+</html>
