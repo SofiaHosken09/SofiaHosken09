@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cardápio da Semana</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Cardápio da Semana</h1>
+    <form>
+      <label for="dia-semana">Dia da Semana:</label>
+      <select id="dia-semana">
+        <option value="segunda-feira">Segunda-feira</option>
+        <option value="terca-feira">Terça-feira</option>
+        <option value="quarta-feira">Quarta-feira</option>
+        <option value="quinta-feira">Quinta-feira</option>
+        <option value="sexta-feira">Sexta-feira</option>
+        <option value="sabado">Sábado</option>
+        <option value="domingo">Domingo</option>
+      </select>
+      <label for="item">Item:</label>
+      <input type="text" id="item">
+      <button type="button" id="adicionar">Adicionar</button>
+    </form>
+    <div id="lista">
+    </div>
+    <div id="imc">
+      <h2>Calculadora de IMC</h2>
+      <form>
+        <label for="altura">Altura (m)</label>
+        <input type="number" id="altura" step="0.01" required>
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" step="0.1" required>
+        <button type="button" onclick="calcularImc()">Calcular</button>
+      </form>
+      <div id="resultado-imc"></div>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

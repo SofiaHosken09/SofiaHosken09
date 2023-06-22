@@ -1,0 +1,207 @@
+/* Estilo para o cardápio */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+  }
+  
+  form select, form input[type="text"], form button {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  form select {
+    width: 150px;
+  }
+  
+  form input[type="text"] {
+    width: 250px;
+  }
+  
+  form button {
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #303f9f;
+  }
+  
+  #lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+  }
+  
+  li span {
+    font-size: 16px;
+  }
+  
+  li button {
+    padding: 5px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  li button:hover {
+    background-color: #e53935;
+  }
+  
+  li button:first-child {
+    background-color: #2196f3;
+  }
+  
+  li button:first-child:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Estilo para a calculadora de IMC */
+  
+  #imc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  #imc h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #imc label {
+    margin-bottom: 10px;
+  }
+  
+  #imc input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  #imc button {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #imc button:hover {
+    background-color: #303f9f;
+  }
+  
+  #resultado-imc {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight
+  }
+
+  #imc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  #imc h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #imc label {
+    margin-bottom: 10px;
+  }
+  
+  #imc input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  #imc button {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #imc button:hover {
+    background-color: #303f9f;
+  }
+  
+  #resultado-imc {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
